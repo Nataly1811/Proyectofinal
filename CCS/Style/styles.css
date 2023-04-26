@@ -1,0 +1,181 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-shadow: border-box;
+}
+
+/*CLASE*/
+.hamburguesas {
+    background-color: palegoldenrod;
+    width: 1200px;
+    height: 1000px;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: auto;
+    border-top: solid white 5px;
+    border-right: solid 7px white;
+    border-bottom: solid 10px white;
+    border-left: solid 12px white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+}
+
+.panes {
+    background-color: palegoldenrod;
+    width: 1200px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: auto;
+    border-top: solid white 5px;
+    border-right: solid 7px white;
+    border-bottom: solid 10px white;
+    border-left: solid 12px white;
+}
+
+.tumbarranchos {
+    background-color: palegoldenrod;
+    width: 1200px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: auto;
+    border-top: solid white 5px;
+    border-right: solid 7px white;
+    border-bottom: solid 10px white;
+    border-left: solid 12px white;
+}
+
+.arepas {
+    background-color: palegoldenrod;
+    width: 1200px;
+    height: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: auto;
+    border-top: solid white 5px;
+    border-right: solid 7px white;
+    border-bottom: solid 10px white;
+    border-left: solid 12px white;
+}
+
+.patacones {
+    background-color: palegoldenrod;
+    width: 1200px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: auto;
+    border-top: solid white 5px;
+    border-right: solid 7px white;
+    border-bottom: solid 10px white;
+    border-left: solid 12px white;
+}
+
+.servicios {
+    background-color: palegoldenrod;
+    width: 1200px;
+    height: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    overflow: auto;
+    border-top: solid white 5px;
+    border-right: solid 7px white;
+    border-bottom: solid 10px white;
+    border-left: solid 12px white;
+}
+
+img {
+    display: block;
+}
+
+h3 {
+    display: inline-block;
+    margin: 10;
+    padding: 10;
+}
+
+/* BOTONERA */
+nav {
+    padding: 1rem;
+}
+
+.botones {
+    list-style-type: none;
+    margin: 10px;
+    background-color: goldenrod;
+}
+
+.botones li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    background-color: red;
+    padding: 10px;
+}
+
+.botones li a {
+    text-decoration: none;
+    color: white;
+}
+
+.botones li:hover {
+    background-color: rosybrown;
+    border-radius: 80%;
+}
+
+.botones li:hover a {
+    color: rgba(5, 5, 5, 0.644);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+main {
+    background-color: goldenrod;
+    width: 100px;
+    height: 100px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+
+}
+
+h1 {
+    color: black;
+}
+
+img a {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    border: 3px double gray;
+}
+
+img :hover a {
+    opacity: 1;
+    border: 3px double white;
+}
+
+nav {
+    background: black;
+}
+
+aside {
+    background: white;
+}
+
+header {
+    background: goldenrod;
+}
+
+footer {
+    background: gray;
+}
