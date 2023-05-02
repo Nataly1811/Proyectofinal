@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pa Que Leo</title>
-    <link rel="icon" type="image/png" href="./IMAGENES/logo Paqueleo sin fondo.png" sizes="32x32">
+    <link rel="stylesheet" href="./CCS/ccs/styles.css">
+    <link rel="icon" type="image/png" href="./IMAGENES/logo Paqueleo sin fondo.png" sizes="50x50">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -18,11 +19,13 @@
             .forEach(toastNode => new Toast(toastNode))
     </script>
 </head>
+
 <nav>
-    <div class="text-bg-warning p-3">
+    <div class="text-bg-warning p-3" id="irarriba">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">PaQueLeo</a>
+                <a href="index.html"><img src="./IMAGENES/logo Paqueleo sin fondo.png" width="100px" height="100px"
+                        alt="logo sin fondo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -31,23 +34,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                            <a class="nav-link active" aria-current="productos" href="#"><strong>Productos</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pedido</a>
+                            <a class="nav-link active" aria-current="Pedidos" href="#"><strong>Pedido</strong></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Contacto
+                            <a class="nav-link active" aria-current="Contactos" href="contacto.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Contactos</strong>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Comercio</a></li>
-                                <li><a class="dropdown-item" href="#">Soporte</a></li>
+                                <li><a class="dropdown-item" href="comercio.html">Comercio</a></li>
+                                <li><a class="dropdown-item" href="soporte.html">Soporte</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Delivery</a></li>
+                                <li><a class="dropdown-item" href="delivery.html">Delivery</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -60,18 +63,9 @@
         </nav>
 </nav>
 </div>
-<main>
-    <div class="d-flex align-content-center">
-
-        <img src="./IMAGENES/logo Paqueleo sin fondo.png" alt="Logo sin fondo" alig width="250px height250px"></h4>
-    </div>
-    <br>
-    <hr>
-    <br>
-</main>
-
-<body>
-    <div class="body">
+<br><hr><br>
+<body class="body">
+    <div>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -314,46 +308,46 @@
                                 <hr>
                                 <br>
                             </div>
-                            <form>
+                            <form class="form">
                                 <h6><em><strong>
                                             <fieldset>
                                                 <legend>Formulario de contacto</legend>
                                                 <div>
-                                                    <label for="nombre">NOMBRE</label>
+                                                    <label for="nombre">NOMBRE:</label>
                                                     <input type="text" name="nombre" placeholder="Juan">
                                                 </div>
-                                                <br>
+                                                
                                                 <div>
-                                                    <label for="apellido">APELLIDO</label>
+                                                    <label for="apellido">APELLIDO:</label>
                                                     <input type="text" name="apellido" placeholder="Perez" required>
                                                 </div>
-                                                <br>
+                                                
                                                 <div>
-                                                    <label for="email">Escribe tu mail *</label>
+                                                    <label for="email">MAIL:*</label>
                                                     <input type="email" name="email" required>
                                                 </div>
-                                                <br>
+                                                
                                                 <div>
-                                                    <label for="nacimiento">Fecha de nacimiento</label>
+                                                    <label for="nacimiento">FECHA DE NACIMIENTO:</label>
                                                     <input type="date">
                                                 </div>
-                                                <br>
+                                                
                                                 <div>
-                                                    <label for="pass">Escribe tu password</label>
+                                                    <label for="pass">CONTRASEÑA:</label>
                                                     <input type="password" name="pass">
                                                 </div>
-                                                <br>
+                                                
                                                 <div>
-                                                    <label for="pais">Selecciona tu Nacionalidad</label>
+                                                    <label for="pais">NACIONALIDAD:</label>
                                                     <select name="pais" id="">
                                                         <option value="arg">ARGENTINA</option>
                                                         <option value="uru">URUGUAY</option>
                                                         <option value="ch">CHILE</option>
                                                     </select>
                                                 </div>
-                                                <br>
+                                                
                                                 <div>
-                                                    <label for="genero">Género</label>
+                                                    <label for="genero">GENERO:</label>
                                                     <input type="radio" name="genero" value="mujer">mujer
                                                     <input type="radio" name="genero" value="varon">Hombre
                                                     <input type="radio" name="genero" value="undecl">no declaro
@@ -361,7 +355,7 @@
                                                 <br>
                                                 <div>
                                                     <label for="comentario">Dejanos tu mensaje</label><br>
-                                                    <textarea name="comentario" id="" cols="30" rows="10"
+                                                    <textarea name="comentario" id="" cols="175" rows="5"
                                                         placeholder="escribre por lo menos 3 palabras"></textarea>
                                                 </div>
                                                 <br>
@@ -370,8 +364,7 @@
                                                 </div>
                                 </h6>
                                 </strong></em>
-                                <br>
-                                <br>
+                                <BR></BR>
                                 <div>
                                     <input type="submit" value="Enviar Datos">
                                     <input type="reset" value="Borrar Datos">
@@ -381,18 +374,36 @@
                             <br>
                             <hr>
                             <br>
-                            <footer>
-                                <footer class="footer">
-                                    <div class="autor">
-                                        <p>Todos los derechos reservados</p>
-                                    </div>
-                                    <div class="redes">
-                                        <a href="http://www.facebook.com" target="_blank"><img class="redes"
-                                                src="./IMAGENES/facebook.png" alt="logo facebook"></a>
-                                        <a href=""><img class="redes" src="./IMAGENES/mail-icon.png"
-                                                alt="logo mail"></a>
-                                    </div>
-                                </footer>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d980.5193403146526!2d-71.62088973048802!3d10.573119317683021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDM0JzIzLjIiTiA3McKwMzcnMTIuOSJX!5e0!3m2!1ses-419!2sar!4v1682992275329!5m2!1ses-419!2sar"
+                                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                                
+                            <iframe width="200" height="200" src="https://www.youtube.com/embed/4DZfHmSSpTU?start=10"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            
+                            <br>
+                            <hr>
+                            <br>
 </body>
+<footer class="footer">
+                                    <div class="autor">
+                                        <p><em><strong> Todos los Derechos Reservados</p></em></strong>
+                                        <div class="redes">
+                                            <a href="http://www.facebook.com" target="_blank"><img class="redes"
+                                                    src="./IMAGENES/facebook.png" alt="logo facebook"></a>
+                                            <a href=""><img class="redes" src="./IMAGENES/mail-icon.png" alt="logo mail"></a>
+                                            <a href="https..." target="_blank"><img src="./IMAGENES/whatsapp-favicon.png"
+                                                    width="50px" height="50px" alt="Whatsapp"></a>
+                                            <a href="https..." target="_blank"><img src="./IMAGENES/instagram.jpg" width="40px"
+                                                    height="40px" alt="Whatsapp"></a>
+                                        </div>
+                                        <a href="#irarriba">Ir arriba</a>
+                                    </div>
+                                    <br>
+</footer>
+                                <br>
 
 </html>
