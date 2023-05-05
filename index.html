@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pa Que Leo</title>
-    <link rel="stylesheet" href="./CCS/ccs/styles.css">
-    <link rel="icon" type="image/png" href="./IMAGENES/logo Paqueleo sin fondo.png" sizes="50x50">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./imagenes/logo Paqueleo sin fondo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -20,64 +21,65 @@
     </script>
 </head>
 
-<nav>
-    <div class="text-bg-warning p-3" id="irarriba">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a href="index.html"><img src="./IMAGENES/logo Paqueleo sin fondo.png" width="100px" height="100px"
-                        alt="logo sin fondo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="productos" href="#"><strong>Productos</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="Pedidos" href="#"><strong>Pedido</strong></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="Contactos" href="contacto.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <strong>Contactos</strong>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="comercio.html">Comercio</a></li>
-                                <li><a class="dropdown-item" href="soporte.html">Soporte</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="delivery.html">Delivery</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-</nav>
-</div>
-<br><hr><br>
-<body class="body">
-    <div>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <img src="./IMAGENES/Hamburguesas.jpg" alt="Hamburguesas" width="100px hig100px"> HAMBURGUESAS
+<body>
+    <nav>
+        <div class="text-bg-warning p-3" id="irarriba">
+            <main class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a href="index.html"><img src="./IMAGENES/logo Paqueleo sin fondo.png" width="100px" height="100px"
+                            alt="logo sin fondo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="productos"
+                                    href="./productos.html"><strong>Productos</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="Pedidos"
+                                    href="./pedidos.html"><strong>Pedido</strong></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" aria-current="Contactos" href="contacto.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <strong>Contactos</strong>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="comercio.html">Comercio</a></li>
+                                    <li><a class="dropdown-item" href="soporte.html">Soporte</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="delivery.html">Delivery</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </nav>
+    </div>
+    <br>
+    <hr>
+    <br>
+<body class="body" id="hamburguesas">
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2>
+                <button class="accordion-button">
+                    <img src="./IMAGENES/Hamburguesas.jpg" alt="Hamburguesas" width="100px" height="100px">
+                    <div>
                         <select class="form-select" aria-label="display" Seleccionar>
-                            <option value="Seleccionar">Seleccionar
+                            <option value="Seleccionar">HAMBURGUESAS
                             <option value="1 Hamburguesa Wopper Sencilla">1 Hamburguesa Wopper Sencilla</option>
                             <option value="2 Hamburguesas Pequeñas">2 Hamburguesas Pequeñas</option>
                             <option value="Hamburguesa Sencilla 1 contorno">Hamburguesa Sencilla 1 contorno</option>
@@ -87,323 +89,241 @@
                             </option>
                         </select>
                     </div>
-                </div>
-            </div>
+        </div>
+    </div>
+    </button>
+    </h2>
+    <br>
 
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <img src="./IMAGENES/panes.jpg" alt="Panes" width="100px hig100px">PANES
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <select class="form-select" aria-label="display" Seleccionar>
-                                <option value="Seleccionar">Seleccionar
-                                <option value="2 Panes con salchichas o Huevo">2 Panes con salchichas o Huevo</option>
-                                </option>
-                            </select>
-                        </div>
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2>
+                <button class="accordion-button">
+                    <img src="./IMAGENES/panes.jpg" alt="Panes" width="100px" height="100px">
+                    <div>
+                        <select class="form-select" aria-label="display" Seleccionar>
+                            <option value="Seleccionar">PANES
+                            <option value="2 Panes con salchichas o Huevo">2 Panes con salchichas o Huevo</option>
+                            </option>
+                        </select>
                     </div>
-                </div>
+        </div>
+    </div>
+    </button>
+    </h2>
+    <br>
 
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <img src="./IMAGENES/arepa.jpg" alt="Arepa" width="100px hig100px">AREPAS
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <select class="form-select" aria-label="display" Seleccionar>
-                                    <option value="Seleccionar">Seleccionar
-                                    <option value="1 Arepa Sencilla Asada o Frita">1 Arepa Sencilla Asada o Frita
-                                    </option>
-                                    <option value="Arepon Sencillo - 4 Arepas Asada o Frita Amarillas">Arepon Sencillo -
-                                        4
-                                        Arepas Asada o Frita Amarillas (150g Carne, Pollo o Carne Mechada)</option>
-                                    <option value="Arepon Especial - 6 Arepas Asada o Frita Amarillas">Arepon Sencillo -
-                                        6 Arepas Asada o Frita Amarillas (150g Carne, Pollo o Carne Mechada)</option>
-                                    </option>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2>
+                <button class="accordion-button">
+                    <img src="./IMAGENES/arepa.jpg" alt="Arepa" width="100px" height="100px">
+                    <div>
+                        <select class="form-select" aria-label="display" Seleccionar>
+                            <option value="Seleccionar">AREPAS
+                            <option value="1 Arepa Sencilla Asada o Frita">1 Arepa Sencilla Asada o Frita
+                            </option>
+                            <option value="Arepon Sencillo - 4 Arepas Asada o Frita Amarillas">Arepon Sencillo -
+                                4
+                                Arepas Asada o Frita Amarillas (150g Carne, Pollo o Carne Mechada)</option>
+                            <option value="Arepon Especial - 6 Arepas Asada o Frita Amarillas">Arepon Sencillo -
+                                6 Arepas Asada o Frita Amarillas (150g Carne, Pollo o Carne Mechada)</option>
+                            </option>
+                        </select>
+                    </div>
+        </div>
+    </div>
+    </button>
+    </h2>
+    <br>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2>
+                <button class="accordion-button">
+                    <img src="./imagenes/tumbarranchos.jpg" alt="Tumbarranchos" width="100px" height="100px">
+                    <div>
+                        <select class="form-select" aria-label="display" Seleccionar>
+                            <option value="Seleccionar">TUMBARRANCHOS
+                            <option value="2 Tumbarranchos Tradicionales">2 Tumbarranchos Tradicionales
+                            </option>
+                        </select>
+                    </div>
+        </div>
+    </div>
+    </button>
+    </h2>
+    <br>
+
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2>
+                <button class="accordion-button">
+                    <img src="./imagenes/patacon verde.jpg" alt="Patacones width="100px" height="100px">
+                    <div>
+                        <select class="form-select" aria-label="display" Seleccionar>
+                            <option value="Seleccionar">PATACONES
+                            <option value="1 Patacon Sencillo Verde o Amarillo">1 Patacon Sencillo Verde
+                                o Amarillo (150g Lomito, Pollo o Carne Mechada)</option>
+                            <option
+                                value="1 Patacon excelente-hamburguesa-tema-receptivo-de-opencart-para-comercio-electronico_304458-original Verde o Amarillo">
+                                1 Patacon Especial Verde o Amarillo (200g Lomito, Pollo o Carne Mechada)
+                            </option>
+                        </select>
+                    </div>
+        </div>
+    </div>
+    </button>
+    </h2>
+    <br>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2>
+                <button class="accordion-button">
+                    <img src="./imagenes/carne pollo o mechada.jpg" alt="servicios adicionales" width="100px" height="100px">
+                    <div>
+                        <select class="form-select" aria-label="display" Seleccionar>
+                            <option value="Seleccionar">SERVICIOS ADICIONALES
+                            <option value="Papas Fritas">Papas Fritas</option>
+                            <option value="Lomito">Lomito</option>
+                            <option value="Pollo">Pollo</option>
+                            <option value="Carne Mechada">Carne Mechada</option>
+                            </option>
+                        </select>
+                    </div>
+        </div>
+    </div>
+    </button>
+    </h2>
+    <br>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <h2>
+                <button class="accordion-button">
+                    <img src="./imagenes/bebidas.jpg" alt="bebidas" width="100px" height="100px">
+                    <div>
+                        <select class="form-select" aria-label="display" Seleccionar>
+                            <option value="Seleccionar">BEBIDAS
+                            <option value="Papas Fritas">Papas Fritas</option>
+                            <option value="Pepsi">Pepsi</option>
+                            <option value="Coca Cola">Coca Cola</option>
+                            <option value="Naranja">Naranja</option>
+                            <option value="Uva">Uva</option>
+                            <option value="Piña">Piña</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Cerveza">Cerveza</option>
+                            </option>
+                        </select>
+                    </div>
+        </div>
+    </div>
+
+    </button>
+    </h2>
+    <br>
+    <hr>
+    <br>
+    </div>
+
+    </body>
+    <form class="form">
+        <h6><em><strong>
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        <div>
+                            <label for="nombre">NOMBRE:</label>
+                            <input type="text" name="nombre" placeholder="Juan">
+
+
+                            <label for="apellido">APELLIDO:</label>
+                            <input type="text" name="apellido" placeholder="Perez" required>
+
+                            <label for="email">MAIL:*</label>
+                            <input type="email" name="email" required>
+
+                            <label for="nacimiento">FECHA DE NACIMIENTO:</label>
+                            <input type="date">
+                            <div>
+                                <label for="pass">CONTRASEÑA:</label>
+                                <input type="password" name="pass">
+
+                                <label for="pais">NACIONALIDAD:</label>
+                                <select name="pais" id="">
+                                    <option value="arg">ARGENTINA</option>
+                                    <option value="uru">URUGUAY</option>
+                                    <option value="ch">CHILE</option>
                                 </select>
+
+                                <label for="genero">GENERO:</label>
+                                <input type="radio" name="genero" value="mujer">mujer
+                                <input type="radio" name="genero" value="varon">Hombre
+                                <input type="radio" name="genero" value="undecl">no declaro
                             </div>
-                        </div>
-                    </div>
-
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <img src="./IMAGENES/tumbarranchos.jpg" alt="Tumbarranchos"
-                                        width="100px hig100px">TUMBARRANCHOS
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <select class="form-select" aria-label="display" Seleccionar>
-                                        <option value="Seleccionar">Seleccionar
-                                        <option value="2 Tumbarranchos Tradicionales">2 Tumbarranchos Tradicionales
-                                        </option>
-                                        </option>
-                                    </select>
-                                </div>
+                            <br>
+                            <div>
+                                <label for="comentario">Dejanos tu mensaje</label><br>
+                                <textarea name="comentario" id="" cols="130" rows="3"
+                                    placeholder="escribre por lo menos 3 palabras"></textarea>
                             </div>
-                        </div>
-
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <img src="./IMAGENES/patacon amarillo.jpg" alt="Patacones"
-                                            width="100px hig100px"> PATACONES
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <select class="form-select" aria-label="display" Seleccionar>
-                                            <option value="Seleccionar">Seleccionar
-                                            <option value="1 Patacon Sencillo Verde o Amarillo">1 Patacon Sencillo Verde
-                                                o Amarillo (150g Lomito, Pollo o Carne Mechada)</option>
-                                            <option
-                                                value="1 Patacon excelente-hamburguesa-tema-receptivo-de-opencart-para-comercio-electronico_304458-original Verde o Amarillo">
-                                                1 Patacon Especial Verde o Amarillo (200g Lomito, Pollo o Carne Mechada)
-                                            </option>
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
+                            <br>
+                            <div>Acepta términos y condiciones
+                                <input type="checkbox" name="acepta" value="1">
                             </div>
+        </h6>
+        </strong></em>
 
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <img src="./IMAGENES/carne pollo o mechada.jpg" alt="Servicios adicionales"
-                                                width="100px hig100px"> SERVICIOS ADICIONALES
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <select class="form-select" aria-label="display" Seleccionar>
-                                                <option value="Seleccionar">Seleccionar
-                                                <option value="Papas Fritas">Papas Fritas</option>
-                                                <option value="Lomito">Lomito</option>
-                                                <option value="Pollo">Pollo</option>
-                                                <option value="Carne Mechada">Carne Mechada</option>
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+        <div>
+            <input type="submit" value="Enviar Datos">
+            <input type="reset" value="Borrar Datos">
+        </div>
+        </fieldset>
+    </form>
+    <br>
+    <hr>
 
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                <img src="./IMAGENES/bebidas.jpg" alt="Bebidas" width="100px hig100px">
-                                                BEBIDAS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <select class="form-select" aria-label="display" Seleccionar>
-                                                    <option value="Seleccionar">Seleccionar
-                                                    <option value="Pepsi">Pepsi</option>
-                                                    <option value="Coca Cola">Coca Cola</option>
-                                                    <option value="Naranja">Naranja</option>
-                                                    <option value="Uva">Uva</option>
-                                                    <option value="Piña">Piña</option>
-                                                    <option value="Malta">Malta</option>
-                                                    <option value="Cerveza">Cerveza</option>
-                                                    </option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+    <h3 class="sucursales">
+        <div>
+        Sucursales
+        <br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d980.5193403146526!2d-71.62088973048802!3d10.573119317683021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDM0JzIzLjIiTiA3McKwMzcnMTIuOSJX!5e0!3m2!1ses-419!2sar!4v1682992275329!5m2!1ses-419!2sar"
+        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+</h3>
 
-                                    <br>
-                                    <hr>
+<hr>
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/4DZfHmSSpTU?start=10"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
 
-                                    <div class="position-sticky">...</div>
-                                    <div class="d-inline-flex p-62">
-                                        <div class="card" style="width: 12rem; height: auto;">
-                                            <img src="./IMAGENES/Hamburguesas.jpg" class="card-img-top"
-                                                alt="Hamburguesas">
-                                            <div class="card-body">
-                                                <p class="card-text">Panes sencillos o Wopper</p>
-                                                <a href="#" class="btn btn-primary">HAMBURGUESA</a>
-                                            </div>
-                                        </div>
+    <br>
+    <hr>
+    <br>
 
-
-                                        <div class="card" style="width: 12rem; height: auto">
-                                            <img src="./IMAGENES/panes.jpg" class="card-img-top" alt="Panes">
-                                            <div class="card-body">
-                                                <p class="card-text">Panes sencillos Hot dog</p>
-                                                <a href="#" class="btn btn-primary">PANES</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="card" style="width:12rem; height: auto">
-                                            <img src="./IMAGENES/arepa.jpg" class="card-img-top" alt="Arepas">
-                                            <div class="card-body">
-                                                <p class="card-text">tapas de arepas de maiz fritas o asadas</p>
-                                                <a href="#" class="btn btn-primary">AREPAS</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="card" style="width:12rem; height: auto">
-                                            <img src="./IMAGENES/tumbarranchos.jpg" class="card-img-top"
-                                                alt="Tumbarranchos">
-                                            <div class="card-body">
-                                                <p class="card-text">arepa frita en crema</p>
-                                                <a href="#" class="btn btn-primary">TUMBARRANCHOS</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="card" style="width:12rem; height: auto">
-                                            <img src="./IMAGENES/patacon amarillo 1.jpg" class="card-img-top"
-                                                alt="Patacones">
-                                            <div class="card-body">
-                                                <p class="card-text">tapas de platano fritos</p>
-                                                <a href="#" class="btn btn-primary">PATACONES</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="card" style="width:12rem; height:auto; height: auto">
-                                            <img src="./IMAGENES/carne pollo o mechada.jpg" class="card-img-top"
-                                                alt="Servicios Adicionales">
-                                            <div class="card-body">
-                                                <p class="card-text">Papas fritas - Carne, Pollo, Carne Mechada</p>
-                                                <a href="#" class="btn btn-primary">ADICIONALES</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="card" style="width:12rem; height: auto">
-                                            <img src="./IMAGENES/bebidas.jpg" class="card-img-top" alt="Bebidas">
-                                            <div class="card-body">
-                                                <p class="card-text">Jugos,Refrescos, Cervezas, </p>
-                                                <a href="#" class="btn btn-primary">BEBIDAS</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <hr>
-                                <br>
-                            </div>
-                            <form class="form">
-                                <h6><em><strong>
-                                            <fieldset>
-                                                <legend>Formulario de contacto</legend>
-                                                <div>
-                                                    <label for="nombre">NOMBRE:</label>
-                                                    <input type="text" name="nombre" placeholder="Juan">
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="apellido">APELLIDO:</label>
-                                                    <input type="text" name="apellido" placeholder="Perez" required>
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="email">MAIL:*</label>
-                                                    <input type="email" name="email" required>
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="nacimiento">FECHA DE NACIMIENTO:</label>
-                                                    <input type="date">
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="pass">CONTRASEÑA:</label>
-                                                    <input type="password" name="pass">
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="pais">NACIONALIDAD:</label>
-                                                    <select name="pais" id="">
-                                                        <option value="arg">ARGENTINA</option>
-                                                        <option value="uru">URUGUAY</option>
-                                                        <option value="ch">CHILE</option>
-                                                    </select>
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="genero">GENERO:</label>
-                                                    <input type="radio" name="genero" value="mujer">mujer
-                                                    <input type="radio" name="genero" value="varon">Hombre
-                                                    <input type="radio" name="genero" value="undecl">no declaro
-                                                </div>
-                                                <br>
-                                                <div>
-                                                    <label for="comentario">Dejanos tu mensaje</label><br>
-                                                    <textarea name="comentario" id="" cols="175" rows="5"
-                                                        placeholder="escribre por lo menos 3 palabras"></textarea>
-                                                </div>
-                                                <br>
-                                                <div>Acepta términos y condiciones
-                                                    <input type="checkbox" name="acepta" value="1">
-                                                </div>
-                                </h6>
-                                </strong></em>
-                                <BR></BR>
-                                <div>
-                                    <input type="submit" value="Enviar Datos">
-                                    <input type="reset" value="Borrar Datos">
-                                </div>
-                                </fieldset>
-                            </form>
-                            <br>
-                            <hr>
-                            <br>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d980.5193403146526!2d-71.62088973048802!3d10.573119317683021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDM0JzIzLjIiTiA3McKwMzcnMTIuOSJX!5e0!3m2!1ses-419!2sar!4v1682992275329!5m2!1ses-419!2sar"
-                                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe> 
-                                
-                            <iframe width="200" height="200" src="https://www.youtube.com/embed/4DZfHmSSpTU?start=10"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            
-                            <br>
-                            <hr>
-                            <br>
-</body>
 <footer class="footer">
-                                    <div class="autor">
-                                        <p><em><strong> Todos los Derechos Reservados</p></em></strong>
-                                        <div class="redes">
-                                            <a href="http://www.facebook.com" target="_blank"><img class="redes"
-                                                    src="./IMAGENES/facebook.png" alt="logo facebook"></a>
-                                            <a href=""><img class="redes" src="./IMAGENES/mail-icon.png" alt="logo mail"></a>
-                                            <a href="https..." target="_blank"><img src="./IMAGENES/whatsapp-favicon.png"
-                                                    width="50px" height="50px" alt="Whatsapp"></a>
-                                            <a href="https..." target="_blank"><img src="./IMAGENES/instagram.jpg" width="40px"
-                                                    height="40px" alt="Whatsapp"></a>
-                                        </div>
-                                        <a href="#irarriba">Ir arriba</a>
-                                    </div>
-                                    <br>
+    <div class="autor">
+        <p><em><strong> Todos los Derechos Reservados</p></em></strong>
+        <div class="redes">
+            <a href="http://www.facebook.com" target="_blank"><img class="redes" src="./IMAGENES/facebook.png"
+                    alt="logo facebook"></a>
+            <a href=""><img class="redes" src="./IMAGENES/mail-icon.png" alt="logo mail"></a>
+            <a href="https..." target="_blank"><img src="./IMAGENES/whatsapp-favicon.png" width="50px" height="50px"
+                    alt="Whatsapp"></a>
+            <a href="https..." target="_blank"><img src="./IMAGENES/instagram.jpg" width="40px" height="40px"
+                    alt="Whatsapp"></a>
+        </div>
+        <br>
+        <a href="#irarriba">Ir arriba</a>
+    </div>
+    <br>
 </footer>
-                                <br>
+<br>
 
 </html>
