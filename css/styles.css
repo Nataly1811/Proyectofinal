@@ -21,12 +21,12 @@ head {
 
 /*BARRA DE OPCIONES*/
 nav {
-background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%) ;
+/*background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%) ;*/
     /*padding: 1rem;
     margin: 0.1rem;
     font-size: 1rem;
     justify-content:space-between;*/
-    width: 1340px;
+    width: 1300px;
     /*height: 150px;*/
     box-sizing: border-box;
 }
@@ -34,14 +34,14 @@ background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%) ;
 
 main {
 
-    background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
-    background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
+    /*background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
+    background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);*/
     /*display: flex;
     flex-direction: row;
     padding: 1rem;
     margin: 0.1rem;
     justify-content: center;*/
-    width: 1150px;
+    width: 1100px;
     /*box-sizing: border-box;*/
 }
 
@@ -51,7 +51,7 @@ main {
 }
 
 .navbar {
-    background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
+    /*background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);*/
     background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
     justify-content: end;
 }
@@ -66,28 +66,39 @@ body {
     width: 1200px;
     height: 500px;
     box-sizing: border-box;*/
-    height: 100%;
+    line-height: 26px;
+    font-size: 13px;
+    z-index: 2;
 }
 
 .contenedor {
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
+    
     display: inline-block;
-    /*flex-direction: column;*/
-    /*flex-wrap: wrap;*/
-    /*padding: 1rem;*/
-    /*margin: 0.5rem;*/
-   /*justify-content:center;*/
-    width: 300px;
-    /*box-sizing:content-box;*/
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 1rem;
+    margin: 20px 15px 20px 15px ;
+    margin-left: 15 px;
+    margin-right: 15px;
+   justify-content:center;
+    width: 300px;
+    box-sizing:content-box;
+    padding: 1rem;
+    border-radius: 15px;
+    overflow:auto;
+}
 
+img {
+border-radius: 20px;
+background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
 }
 
 img:hover {
     opacity: 1;
     border:lightgrey;
+    border-radius: 10px;
 
 }
 
@@ -162,6 +173,7 @@ iframe {
 /*PIE DE PAGINA*/
 footer {
     background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
+    background-size: 80px 80px;
     width: 1200px;
     height: 100px;
     padding: 3px;
@@ -179,4 +191,8 @@ footer {
     body {
         background-color: white;
     }
+}
+
+@keyframes identifier {
+    
 }
