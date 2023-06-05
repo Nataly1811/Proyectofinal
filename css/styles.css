@@ -4,161 +4,105 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #f5f186;
+/*CABEZA*/
+/*BARRA DE OPCIONES*/
+.navbar {
     background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
-    /*width: 1350px;*/
-    box-sizing: border-box;
-    /*margin: 1rem;*/
+    justify-content: center;
+}
+.redes {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: inline;
+}
+.imagen {
+    width: 40px;
+    height: 40px;
+    justify-content: flex-start;
+    display: inline;
+}
+.button {
+    border: none;
+    border-radius: 20px;
 }
 
-
-/*CABEZA*/
-/*head {
-    /*padding: 1rem;
-    margin: 0.5rem;
-}*/
-
-/*BARRA DE OPCIONES*/
-nav {
-/*background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%) ;*/
-    /*padding: 1rem;
-    margin: 0.1rem;
-    font-size: 1rem;
-    justify-content:space-between;*/
-    width: 1300px;
-    /*height: 150px;*/
-    box-sizing: border-box;
+/*CARRITO*/
+#productos {
+    list-style: none;
 }
 .agregar-carrito {
     padding: 5px 10px;
-    background-color: #4caf50;
+    background-color: green;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
-  }
-
-  .agregar-carrito:hover {
-    background-color: #45a049;
-  }
-  
-  #carrito {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #carrito li {
-    margin-bottom: 10px;
-  }
-
-main {
-
-    /*background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
-    background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);*/
-    /*display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    margin: 0.1rem;
-    justify-content: center;*/
-    width: 1100px;
-    /*box-sizing: border-box;*/
 }
-
+.agregar-carrito:hover {
+    background-color: #45a049;
+}
+#carrito {
+    list-style-type: none;
+    padding: 1rem;
+}
+#carrito li {
+    margin-bottom: 10px;
+}
 .nav-item:hover {
     border-radius: 20%;
     background-color: lightgoldenrodyellow;
 }
 
-.navbar {
-    /*background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);*/
-    background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
-    justify-content: end;
-}
 
 /*CUERPO*/
 body {
     background-color: #f5f186;
     background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
     display: block;
-   /* padding: 1rem;
-    justify-content:center;
+    padding: 1rem;
+    justify-content: center;
     width: 1200px;
     height: 500px;
-    box-sizing: border-box;*/
+    box-sizing: border-box;
     line-height: 26px;
     font-size: 13px;
     z-index: 2;
 }
-
+.grid {
+    display: block;
+    justify-content: flex-end;
+}
 .contenedor {
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 1rem;
-    margin: 20px 15px 20px 15px ;
+    margin: 20px 15px 20px 15px;
     margin-left: 15 px;
     margin-right: 15px;
-    justify-content:center;
+    justify-content: center;
     width: 300px;
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding: 1rem;
     border-radius: 15px;
-    overflow:auto;
-}
-
-.centrado{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: inline-block;
-    
-    flex-wrap: wrap;
-    padding: 1rem;
-    margin: 20px 15px 20px 15px ;
-    margin-left: 15 px;
-    margin-right: 15px;
-    justify-content:center;
-    width: 300px;
-    box-sizing:content-box;
-    padding: 1rem;
-    border-radius: 15px;
-    overflow:auto;
-
+    overflow: auto;
 }
 
 img {
-border-radius: 20px;
-background-image: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
-width: 200px;
-height: 200px;
-
-
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
 }
-
 img:hover {
     opacity: 1;
-    border:lightgrey;
-    border-radius: 10px;
-
+    border: black;
+    border-radius: 80px;
 }
-
-
-.accordion-item {
-    width: 500px;
-    height: 200px;
-    padding: 10px;
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    align-content: baseline;
-    box-sizing: border-box;
-    border-radius: 50%;
-    display: flex;
-    box-sizing: border-box;
+.button {
+    opacity: 1;
+    border: black;
+    border-radius: 80px;
 }
 
 .accordion {
@@ -170,30 +114,31 @@ img:hover {
     box-sizing: border-box;
 }
 
-
-
-
 /*FORMULARIO*/
 .form {
-    background: white;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 1000px;
-    height: 320px;
-    padding: 1rem;
-    margin: 0.5rem;
-    border-top: solid black 2px;
-    border-right: solid 2px black;
-    border-bottom: solid 2px black;
-    border-left: solid 2px black;
-    display: block;
+    background-size:100% 100%;
+    text-decoration-color: black ;
+    padding: 3rem;
+    margin: 1rem;
+    border: 10px;
     justify-content: center;
     box-sizing: border-box;
-
+    list-style: none;
+}
+.lista{
+width: 1040px;
+height: 200px;
+justify-content: flex-start;
+}
+.link {
+    border-bottom: #9dfbc8;
+    text-decoration-color: black;
+    list-style: none;
 }
 
 /*SUCURSALAES*/
 .sucursales {
+    background-size:100% 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -202,29 +147,23 @@ img:hover {
 }
 
 /*MULTIMEDIA*/
-iframe {
-    padding: 1rem;
+.iframe {
+    background-size:100% 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     text-align: center;
     box-sizing: border-box;
-    width: 200px;
+    width: 1000px;
 }
 
 /*PIE DE PAGINA*/
-footer {
-    background-color: linear-gradient(315deg, #f5f186 0%, #9dfbc8 74%);
-    background-size: 80px 80px;
-    width: 1200px;
-    height: 100px;
-    padding: 3px;
-    margin: 3px auto;
-    border-top: solid black 1px;
-    border-right: solid 1px black;
-    border-bottom: solid 1px black;
-    border-left: solid 1px black;
+.footer {
+    background-size:100% 100%;
+    padding: 1rem;
+    margin: auto;
     text-align: center;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+
 }
 
 /* MEDIA QUERIES */
@@ -232,8 +171,4 @@ footer {
     body {
         background-color: white;
     }
-}
-
-@keyframes identifier {
-    
 }

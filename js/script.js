@@ -28,25 +28,25 @@ entrada = prompt ("Ingresar Nombre")
         this.precios;
     }*/
 class Comidas {
-    constructor (tipo, Precio) {
-            this.tipo = tipo
-            this.precio = precio
-}
-Descuentos (){
-    let PorcentajeDeDescuento = Number (prompt("Ingresa tu porcentaje de descuento"))
-    let nuevoValor = this.precio - ((PorcentajeDeDescuento * this.precio)/ 100)
-    alert ("Con tu descuento la comida "+ "this.tipo"+ "te sale en" + "nuevoValor" + "dolares")
+    constructor(tipo, Precio) {
+        this.tipo = tipo
+        this.precio = precio
+    }
+    Descuentos() {
+        let PorcentajeDeDescuento = Number(prompt("Ingresa tu porcentaje de descuento"))
+        let nuevoValor = this.precio - ((PorcentajeDeDescuento * this.precio) / 100)
+        alert("Con tu descuento la comida " + "this.tipo" + "te sale en" + "nuevoValor" + "dolares")
 
+    }
 }
-}
-    const comida1 = new Comidas("hamburguesaWopperSencilla", "3$")
-    const comida2 = new Comidas("hamburguesasPequeñas", "3$")
-    const comida3 = new Comidas("hamburguesaSencilla1contorno", "4$")
-    const comida4 = new Comidas("hamburguesaEspecial1contorno", "7$")
-    const comida5 = new Comidas("hamburguesaSencillaMaracucha", "4$")
-    const comida6 = new Comidas("hamburguesaEspecialMaracucha", "3$")
-  
-comida1.Descuentos ()
+const comida1 = new Comidas("hamburguesaWopperSencilla", "3$")
+const comida2 = new Comidas("hamburguesasPequeñas", "3$")
+const comida3 = new Comidas("hamburguesaSencilla1contorno", "4$")
+const comida4 = new Comidas("hamburguesaEspecial1contorno", "7$")
+const comida5 = new Comidas("hamburguesaSencillaMaracucha", "4$")
+const comida6 = new Comidas("hamburguesaEspecialMaracucha", "3$")
+
+comida1.Descuentos()
 
 
 /*for (const comida1 in object) {
@@ -59,7 +59,7 @@ comida1.Descuentos ()
 }*/
 
 
-/*class hamburguesa1 {
+class hamburguesa1 {
     constructor(hamburguesaWopperSencilla, hamburguesasPequeñas, hamburguesaSencilla1contorno, hamburguesaEspecial1contorno, hamburguesaSencillaMaracucha, hamburguesaEspecialMaracucha, precio) {
         this.hamburguesaWopperSencilla = hamburguesaWopperSencilla;
         this.hamburguesasPequeñas = hamburguesasPequeñas;
@@ -68,11 +68,40 @@ comida1.Descuentos ()
         this.hamburguesaSencillaMaracucha = hamburguesaSencillaMaracucha;
         this.hamburguesaEspecialMaracucha = hamburguesaEspecialMaracucha;
         this.precio
-}
+    }
 
-/* alert("la" + "this.hamburguesawopperSencilla" + "sale en" + "this.precios")
-alert("la" + "this.hamburguesaspequeñas" + "sale en "+ "this.precios")
+    /*alert("la" + "this.hamburguesawopperSencilla" + "sale en" + "this.precios")
+alert("la" + "this.hamburguesaspequeñas" + "sale en " + "this.precios")
 alert("la" + "this.hamburguesaSencilla1contorno" + "sale en" + "this.precios")
 alert("la" + "this.hamburguesaEspecial1contorno" + "sale en" + "this.precios")
 alert("la" + "this.hamburguesaSencillaMaracucha" + "sale en" + "this.precios")
 alert("la" + "this.hamburguesaEspecialMaracucha" + "sale en" + "this.precios")*/
+
+let form = documentElementById ("form")
+form.addEventListener("submit", ValidarFormulario)
+
+function ValidarFormulario(e) {
+    e.preventDefault()
+}
+
+let.nombre = e.target
+let.apellido = e.target
+let.mail = e.target
+let.fechaDeNacimiento = e.target
+let.Contrasenia = e.target
+let.nacionalidad = e.target
+let.genero = e.target
+let.dejanoTuMensaje = e.target
+
+console.log(nombre.Children[0].value)
+console.log(apellido.Children[1].value)
+console.log(mail.Children[2].value)
+console.log(fechaDeNacimiento.Children[3].value)
+console.log(Contrasenia.Children[4].value)
+console.log(nacionalidad.Children[5].value)
+console.log(genero.Children[6].value)
+console.log(dejanostuMensaje.Children[7].value)
+
+
+
+
